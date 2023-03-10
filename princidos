@@ -1,0 +1,52 @@
+<?php
+$errores = '';
+$enviado = '';
+if (isset ($_POST['submit'])) {
+	$nombre = $_POST['nombre'];
+	$documentacion = $_POST['documentacion'];
+    $postal = $_POST['postal'];
+	$telefono = $_POST['telefono'];
+    
+	if (!empty($nombre)){
+		$nombre = trim($nombre);
+		$nombre = filter_var($nombre, FILTER_SANITIZE_STRING);
+	} else {
+		$errores .= 'Por favor ingresa un nombre <br />';
+	}
+	if (!empty($documentacion)) {
+        $documentacion = trim($documentacion);
+		$documentacion = filter_var($documentacion, FILTER_SANITIZE_EMAIL);
+	} else {
+		$errores .= 'Por favor ingresa tu cedula <br />';
+	}
+
+    if (!empty($postal)) {
+        $postal = trim($postal);
+		$postal = filter_var($documentacion, FILTER_SANITIZE_EMAIL);
+	} else {
+		$errores .= 'Por favor ingresa tu postal <br />';
+	}
+
+	if (!empty($telefono)) {
+		$telefono = htmlspecialchars($telefono);
+		$telefono = trim($telefono);
+		$telefono = stripslashes($telefono);
+} else {
+	$errores .= 'Por favor ingresa el mensaje <br />';
+}
+
+if (!$errores){
+	$enviar_a = 'valeriefraimy@gmail.com';
+	$asunto = 'Correo enviado desde mi Pagina.com';
+	$mensaje_preparado = "De: $nombre /n";
+	$mensaje_preparado .= "Correo: $documentacion /n";
+	$mensaje_preparado .= "Mensaje: " . $telefono;
+
+	//mail($enviar_a, $asunto, $mensaje_preparado);
+	$enviado = 'true';
+}
+}
+
+
+require 'princi.php';
+?>

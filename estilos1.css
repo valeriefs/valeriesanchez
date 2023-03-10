@@ -1,0 +1,145 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+body {
+	background: url(images/corripio1.jpg);
+	background-size: cover;
+	background-position: center;
+	font-size: 16px;
+	font-family: "Roboto", Arial, sans-serif, helvetica;
+}
+
+.wrap {
+	background-color: white ;
+	width: 50%;
+	max-width: 500px;
+	height: 370px;
+	margin: auto;
+	opacity: 0.85;
+	box-shadow: 0 0 3px grey;
+
+}
+
+
+form input[type="text"],
+form input[type="email"],
+form input[type="servicios"],
+form input[type="date"],
+form input[type="password"],
+form textarea {
+	border: 1px solid #FF5733;
+	border-radius: 2px;
+	padding: 16px;
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+	font-family: "Roboto", Arial, sans-serif, helvetica;
+	font-size: 1em;
+	color: #141938;
+	background-color: white;
+}
+
+form input[type="text"]:hover,
+form input[type="email"]:hover,
+form input[type="servicios"]:hover,
+form input[type="date"]:hover,
+form input[type="password"]:hover,
+form textarea:focus {
+background: #EFB68D;
+}
+
+
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="servicios"]:focus,
+form input[type="date"]:focus,
+form input[type="password"]:focus,
+form textarea:focus{
+	border: 2px solid #FF5733;
+	padding: 15px;
+}
+
+.textbox {
+	border: 1px solid #ff3333;
+	border-radius: 2px;
+	padding: 16px;
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+	font-family: "Roboto", Arial, sans-serif, helvetica;
+	font-size: 1em;
+	color: #141938;
+}
+
+form textarea {
+	max-width: 100%;
+	min-width: 100%;
+	max-height: 300px;
+	min-height: 150px;
+}
+
+
+.alert {
+	padding: 1em;
+	color: #fff;
+	border-radius: 2px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.alert.error {
+	background: #F2DEDE;
+	border: 1px solid #a94442;
+	color: #a94442;
+}
+
+.alert.success {
+	background: #FACC2E;
+}
+
+.btn,
+	form input [type="submit"]{
+		padding: 15px;
+		background:#D6D4D4;
+		color: #fffcfc;
+		font-size: 1em;
+		font-family: "Roboto", Arial, sans-serif, helvetica;
+		border-radius: 2px;
+		border: none;
+		float: right;
+		cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 0 0 3px grey;
+        
+
+	}
+
+.form-control{
+	padding: 50px;
+    border: 1px solid #cdcbcb;
+    border-radius: 2px;
+    display: block;
+    margin-bottom: 20px;
+    font-family:"Roboto", Arial, sans-serif, helvetica;
+    font-size: 1em;
+    color: #F03C3C;
+ }
+
+form input[type="submit"]:hover{
+	background: #ff3333;
+}
+
+form input[type="submit"]:focus{
+	background: orange;
+}
+
+.imagen {
+	align-content: ;
+}

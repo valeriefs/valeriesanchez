@@ -1,0 +1,270 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: white;
+	font-size: 16px;
+	font-family: "Reboto", Arial, sans-serif, helvetica;
+}
+
+
+
+.wrap {
+	width: 100%;
+	max-width: 500px;
+	margin:auto;
+}
+
+
+
+form input [type="text"],
+form input [type="email"],
+form input [type="mensaje"],
+form textarea {
+    border: 1px solid #f3eef2;
+    border-radius: 2px;
+    padding: 16px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    font-family:"Roboto", Arial, sans-serif, helvetica;
+    font-size: 1em;
+    color: #111111;
+}
+ 
+.form-control{
+    border: 1px solid #cdcbcb;
+    border-radius: 2px;
+    padding: 16px;
+    width: 90%;
+    display: block;
+    margin-bottom: 20px;
+    font-family:"Roboto", Arial, sans-serif, helvetica;
+    font-size: 1em;
+    color: #000000;
+}
+
+.form-select{
+    border: 1px solid #cdcbcb;
+    border-radius: 2px;
+    padding: 16px;
+    width: 80%;
+    display: block;
+    margin-bottom: 20px;
+    font-family:"Roboto", Arial, sans-serif, helvetica;
+    font-size: 1em;
+    color: #000000;
+}
+
+.mb-3{
+    width: 45%;
+	margin: 20px 0;
+	padding: 20px;
+	background: white;
+	overflow: hidden;
+	box-shadow: 0 0 3px grey;
+	float: left;
+    
+}
+.mb-4{
+    width: 45%;
+	margin: 20px 0;
+	padding: 20px;
+	background: white;
+	overflow: hidden;
+	box-shadow: 0 0 3px grey;
+	float: right;
+   
+	
+}
+
+.mb-5{
+    width: 45%;
+	margin: 20px 0;
+	padding: 20px;
+	background: red;
+	overflow: hidden;
+	box-shadow: 0 0 3px grey;
+	margin: 0 auto;
+    
+}
+
+.form-control1{
+    border: 1px solid #cdcbcb;
+    border-radius: 2px;
+    padding: 16px;
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+    font-family:"Roboto", Arial, sans-serif, helvetica;
+    font-size: 1em;
+    color: #000000;
+}
+
+form input [type="text"] focus,
+form input [type="email"] focus,
+form input [type="password"] focus,
+form textarea focus{
+    border: 2px solid #3F51B5;
+    padding: 15px;
+}
+
+form textarea {
+	max-width: 100%;
+	min-width: 100%;
+	max-height: 300px;
+	min-height: 150px;
+}
+  
+.alert {
+	background: #F2DEDE;
+	color: #fff;
+	border-radius: 2px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.alert.error {
+	background: #F2DEDE;
+	border: 1px solid #a94442;
+	color: #a94442;
+}
+
+.alert.success {
+	background: #4CAF50;
+}
+
+
+.btn1,
+	form input [type="submit"]{
+		padding: 15px;
+		background: #f3474c;
+		color: #fffcfc;
+		font-size: 1em;
+		font-family: "Roboto", Arial, sans-serif, helvetica;
+		border-radius: 2px;
+		border: none;
+		float: right;
+		cursor: pointer;
+        border-radius: 10px;
+	}
+
+
+.btn,
+	form input [type="submit"]{
+		padding: 15px;
+		background: #f3474c;
+		color: #fffcfc;
+		font-size: 1em;
+		font-family: "Roboto", Arial, sans-serif, helvetica;
+		border-radius: 2px;
+		border: none;
+		float: left;
+		cursor: pointer;
+        border-radius: 10px;
+	}
+
+.btn2,
+	form input [type="submit"]{
+		padding: 15px;
+		background: #f3474c;
+		color: #fffcfc;
+		font-size: 1em;
+		font-family: "Roboto", Arial, sans-serif, helvetica;
+		border-radius: 2px;
+		border: none;
+		float:right;
+		cursor: pointer;
+        border-radius: 10px;
+	}
+
+
+.link{
+    color:#f9f9f9;
+}
+
+form input [type="submit"]:hover{
+	background: #f04f4f;
+}
+
+
+
+
+ 
+.super-cabecera{
+    position:relative;
+}
+.super-cabecera nav{
+    position:relative;
+    width:80%;
+    max-width:1000px;
+    margin:0 auto;
+}
+.super-cabecera nav ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.super-cabecera nav ul li{
+    position:relative;
+    display:inline-block;
+    vertical-align:top;
+    padding:10px 0 0 0;
+    margin:0;
+    width:20%;
+}
+.super-cabecera nav ul li a{
+    text-decoration:none;
+    color:#333;
+}
+.super-cabecera nav ul li i{
+    display:block;
+    vertical-align:top;
+    width:100%;
+    color:#999;
+    text-align:center;
+}
+.super-cabecera nav ul li span.borde{
+    display:block;
+    height:4px;
+    background-color:#F48024;
+    margin-top:10px;
+}
+.super-cabecera nav ul li span.texto{
+    display:block;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    background-color:#CCC;
+}
+/* Transiciones en efecto Hover */
+.super-cabecera li,
+.super-cabecera li *{
+transition:400ms;
+}
+.super-cabecera nav ul li:hover{
+    background-color:#F1F1F1;
+}
+.super-cabecera nav ul li:hover span.borde{
+    background-color:#333333;
+}
+.super-cabecera nav ul li:hover a i{
+    color:#222;
+}
+.super-cabecera nav ul li:hover a .texto{
+    color:#000;
+    background-color:#BBB;
+}
+
+.header{
+	width: 100px;
+	height: 90px;
+	color: #F03C3C;
+
+}
+
